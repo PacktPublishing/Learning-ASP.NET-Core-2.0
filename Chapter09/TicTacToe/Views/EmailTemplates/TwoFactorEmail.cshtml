@@ -1,0 +1,7 @@
+﻿@model TicTacToe.Models.TwoFactorEmailModel
+@{
+    ViewData["Title"] = "View";
+    Layout = "_LayoutEmail";
+}
+<h1>Welcome @Model.DisplayName</h1>
+You have requested a two factor code, please click <a href="@Model.ActionUrl">here</a> to continue.

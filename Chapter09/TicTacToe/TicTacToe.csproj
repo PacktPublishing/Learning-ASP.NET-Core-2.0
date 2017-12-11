@@ -1,0 +1,125 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Halcyon.Mvc" Version="2.5.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.0" />
+    <PackageReference Include="Sendgrid" Version="9.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TicTacToe.Logging\TicTacToe.Logging.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Localization\Controllers\GameInvitationController.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GameInvitationController.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Models\UserModel.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserModel.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\GameInvitation.GameInvitationConfirmation.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GameInvitation.GameInvitationConfirmation.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\GameInvitation.index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>GameInvitation.Index.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\Home.Index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Home.Index.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\Leaderboard.Index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Leaderboard.Index.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\UserRegistration.EmailConfirmation.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserRegistration.EmailConfirmation.resx</DependentUpon>
+    </Compile>
+    <Compile Update="Localization\Views\UserRegistration.Index.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>UserRegistration.Index.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Localization\Controllers\GameInvitationController.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Controllers\GameInvitationController.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GameInvitationController.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Models\UserModel.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Models\UserModel.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserModel.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\GameInvitation.GameInvitationConfirmation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\GameInvitation.GameInvitationConfirmation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GameInvitation.GameInvitationConfirmation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\GameInvitation.Index.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\GameInvitation.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>GameInvitation.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Home.Index.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Home.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Home.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Leaderboard.Index.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\Leaderboard.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Leaderboard.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.EmailConfirmation.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.EmailConfirmation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserRegistration.EmailConfirmation.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.Index.fr.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Localization\Views\UserRegistration.Index.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>UserRegistration.Index.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Account\Data\" />
+    <Folder Include="Areas\Account\Models\" />
+  </ItemGroup>
+
+</Project>
