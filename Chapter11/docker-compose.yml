@@ -1,0 +1,16 @@
+version: '3'
+services:
+  sql:
+    image: "microsoft/mssql-server-windows-express"
+    environment:
+      sa_password: "123TicTacToe!"
+      ACCEPT_EULA: "Y"
+  tictactoe:
+    image: tictactoe
+    build:
+      context: .
+      dockerfile: TicTacToe\Dockerfile
+    ports:
+      - "8081:5000"
+    depends_on:
+      - sql
