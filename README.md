@@ -7,7 +7,7 @@ Being able to develop web applications that are highly efficient while easy to m
 ## Instructions and Navigation
 All of the code is organized into folders. Each folder starts with a number followed by the application name. For example, Chapter02.
 
-All the code files are placed in their respective code folders. Chapters 1 to 3 do not have any code files.
+All the code files are placed in their respective code folders. Chapters 1, 2, and 3 do not have any code files.
 
 The code will look like the following:
 ```
